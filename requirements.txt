@@ -1,0 +1,39 @@
+# Core LLM + LangChain stack
+langchain
+langchain-community
+langchain-openai
+openai
+faiss-cpu
+
+# Document loaders
+PyMuPDF  # for PDF (used by PyPDFLoader)
+python-docx  # for docx
+docx2txt
+
+# Embeddings and vector store
+tiktoken
+
+# Translation
+deep-translator
+
+# Audio
+gTTS
+SpeechRecognition
+pydub
+pyaudio
+
+# FastAPI + server
+fastapi
+uvicorn
+
+# Streamlit (if you're also using Streamlit)
+streamlit
+
+# Environment and utilities
+python-dotenv
+
+# For doc store and memory
+requests
+
+# If you're using Google Speech Recognition, include:
+google-api-python-client
