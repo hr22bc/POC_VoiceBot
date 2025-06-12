@@ -20,7 +20,8 @@ deep-translator
 gTTS
 SpeechRecognition
 pydub
-pyaudio
+#pyaudio
+audio-recorder-streamlit
 
 # FastAPI + server
 fastapi
