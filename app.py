@@ -20,7 +20,7 @@ load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 st.set_page_config(page_title="Multilingual Voice Chatbot", layout="centered")
-st.title("🌍 Multilingual Voice Chatbot")
+st.title("Multilingual Voice Chatbot")
 st.markdown("Ask questions based on uploaded documents in your selected language. Get responses in both text and audio.")
 
 # ----------------------------
@@ -87,7 +87,7 @@ if uploaded_file:
                 tmp_audio.write(audio_bytes)
                 tmp_audio_path = tmp_audio.name
 
-            with st.spinner("🔄 Converting speech to text..."):
+            with st.spinner("🔄 Processing..."):
                 try:
                     recognizer = sr.Recognizer()
                     with sr.AudioFile(tmp_audio_path) as source:
@@ -106,13 +106,13 @@ if uploaded_file:
                             st.audio(audio_data, format="audio/mp3")
 
                         except sr.UnknownValueError:
-                            st.error("❌ Could not understand the audio. Please speak more clearly.")
+                            st.error(" Try Again !!! Could not understand the audio. Please speak more clearly.")
                         except sr.RequestError as e:
-                            st.error(f"❌ Speech recognition service error: {e}")
+                            st.error(f"Speech recognition service error: {e}")
 
                     os.unlink(tmp_audio_path)
                 except Exception as e:
-                    st.error(f"❌ Audio processing error: {e}")
+                    st.error(f" Try Again !!Audio processing error: {e}")
 
     # ----------------------------
     # Chat History
