@@ -38,3 +38,9 @@ requests
 
 # If you're using Google Speech Recognition, include:
 google-api-python-client
+
+streamlit-webrtc==0.45.0
+speechrecognition
+av
+numpy
+pydub
