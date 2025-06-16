@@ -116,7 +116,7 @@ if uploaded_file:
     # ----------------------------
     elif input_mode == "Speak":
         st.markdown("### 🎙️ Voice Recording")
-        st.markdown("**Instructions:** Click the microphone icon. When it turns **Red**, start speaking. Click again to **stop** recording and Mic trun **Black**. Please wait for Processing"
+        st.markdown("**Instructions:** Click the microphone icon. When it turns **Red**, start speaking. Click again to **stop** recording and Mic trun **Black**. "
         "**First time audio click for each new Chat will setup Microphone Stability**. ")
         
         if st.session_state.is_processing_audio:
