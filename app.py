@@ -22,7 +22,7 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 # Login System
 # ----------------------------
 def login():
-    st.title("🔐 Login to Voice Chatbot")
+    st.title("🔐 Login to Multilingual Chatbot")
 
     username = st.text_input("Username")
     password = st.text_input("Password", type="password")
